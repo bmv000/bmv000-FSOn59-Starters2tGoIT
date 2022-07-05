@@ -27,30 +27,37 @@
     />
 
     <!-- style -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <!--Шапка-->
-    <header>
-      <nav>
-        <a href="./index.html"><img src="./images/logo.svg" alt="logo" />Finance Ledger</a>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Cases</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <a class="logo link" href="./index.html"
+            ><img class="logo-img" src="./images/logo.svg" alt="logo" />
+            <span class="accent">Finance</span> Ledger</a
+          >
+          <ul class="header-nav-list list">
+            <li class="header-nav-item"><a class="header-nav-link link" href="">Home</a></li>
+            <li class="header-nav-item"><a class="header-nav-link link" href="">About</a></li>
+            <li class="header-nav-item"><a class="header-nav-link link" href="">Cases</a></li>
+            <li class="header-nav-item"><a class="header-nav-link link" href="">Blog</a></li>
+            <li class="header-nav-item"><a class="header-nav-link link" href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!--Основной контент-->
     <main>
-      <section>
-        <h1>The Sky Is The Limit</h1>
-        <p>We provide world class financial assistance</p>
-        <button type="button">Read More</button>
+      <section class="hero hero-img">
+        <div class="container">
+          <h1 class="hero-title">The Sky Is The Limit</h1>
+          <p class="hero-text">We provide world class financial assistance</p>
+          <button class="button" type="button">Read More</button>
+        </div>
       </section>
 
       <!-- Секция about  -->
@@ -91,18 +98,22 @@
         </p>
         <button type="button">Read More</button>
       </section>
+
+      <!-- cases -->
       <section>
         <p>This is what we do</p>
         <h2>Business Cases</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
-        <img src="./images/cases1.jpg" alt="cases1" width="320" height="214" />
-        <img src="./images/cases2.jpg" alt="cases2" width="320" height="214" />
-        <img src="./images/cases3.jpg" alt="cases3" width="320" height="214" />
-        <img src="./images/cases4.jpg" alt="cases4" width="320" height="214" />
-        <img src="./images/cases5.jpg" alt="cases5" width="320" height="213" />
-        <img src="./images/cases6.jpg" alt="cases6" width="320" height="213" />
-        <img src="./images/cases7.jpg" alt="cases7" width="320" height="214" />
-        <img src="./images/cases8.jpg" alt="cases8" width="320" height="214" />
+        <ul>
+          <li><img src="./images/cases/cases1.jpg" alt="cases1" width="320" height="214" /></li>
+          <li><img src="./images/cases/cases2.jpg" alt="cases2" width="320" height="214" /></li>
+          <li><img src="./images/cases/cases3.jpg" alt="cases3" width="320" height="214" /></li>
+          <li><img src="./images/cases/cases4.jpg" alt="cases4" width="320" height="214" /></li>
+          <li><img src="./images/cases/cases5.jpg" alt="cases5" width="320" height="213" /></li>
+          <li><img src="./images/cases/cases6.jpg" alt="cases6" width="320" height="213" /></li>
+          <li><img src="./images/cases/cases7.jpg" alt="cases7" width="320" height="214" /></li>
+          <li><img src="./images/cases/cases8.jpg" alt="cases8" width="320" height="214" /></li>
+        </ul>
       </section>
 
       <!--Секция post-->

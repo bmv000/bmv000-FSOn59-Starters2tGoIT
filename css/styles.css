@@ -1,55 +1,158 @@
 :root {
-    --accent-color: #28a745;
-    --hero-text-color: #e9e9e9;
-    --primary-text-color: #333333;
-    --secondary-text-color: #ffffff;
-    --bg-color: #e5e5e5;
-  }
+  --accent-color: #28a745;
+  --hero-text-color: #e9e9e9;
+  --primary-text-color: #333333;
+  --secondary-text-color: #ffffff;
+  --bg-color: #e5e5e5;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--bg-color);
+  font-size: 18px;
+  color: var(--primary-text-color);
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+/* Класс для обнуления базовых свойств у списков (ul) */
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* Класс для обнуления базовых свойств у ссылок */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+/* Свойства для корректного отображения картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Свойства для обнуления курсива у address */
+
+address {
+  font-style: normal;
+}
+
+.container {
+  padding: 0 28px;
+  margin: 0 auto;
+  width: 1360px;
+}
+
+/* Header */
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  margin-right: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+
+  font-size: 35px;
+  line-height: 1.21;
+
+  color: var(--secondary-text-color);
+}
+
+.accent {
+  margin-right: 4px;
+
+  color: var(--accent-color);
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-nav-link {
+  line-height: 1.56;
+  padding: 20px 0;
+  display: inline-block;
+
+  color: var(--secondary-text-color);
+}
+
+/* hero */
+.hero {
+  background-position: center;
   
-  body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: var(--bg-color);
-    font-size: 18px;
-    color: var(--primary-text-color);
-  }
+  text-align: center;
+  background-color: var(--primary-text-color);
   
-  html {
-    box-sizing: border-box;
-  }
-  *,
-  *::after,
-  *::before {
-    box-sizing: inherit;
-  }
-  /* Стили для обнуления верхних отступов у элементов */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin-top: 0;
-  }
-  /* Класс для обнуления базовых свойств у списков (ul) */
-  .list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-  }
-  /* Класс для обнуления базовых свойств у ссылок */
-  .link {
-    text-decoration: none;
-    color: inherit;
-  }
-  /* Свойства для корректного отображения картинок */
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  /* Свойства для обнуления курсива у address */
-  
-  address {
-    font-style: normal;
-  }
+  padding-top: 285px;
+  padding-bottom: 285px;
+}
+
+/* .hero-img {
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/hero/sky.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.hero-title {
+  margin-bottom: 25px;
+
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: var(--hero-text-color);
+}
+
+.hero-text {
+  font-size: 22px;
+  line-height: 1.67;
+  text-align: center;
+
+  color: var(--hero-text-color);
+}
+
+.button {
+  padding: 10px 30px 10px 41px;
+  border-radius: 5px;
+  border: none;
+
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 1.56;
+
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
