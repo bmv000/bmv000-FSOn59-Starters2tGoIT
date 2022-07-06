@@ -10,17 +10,20 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: var(--bg-color);
   font-size: 18px;
+  line-height: 1.56;
   color: var(--primary-text-color);
 }
 
 html {
   box-sizing: border-box;
 }
+
 *,
 *::after,
 *::before {
   box-sizing: inherit;
 }
+
 /* Стили для обнуления верхних отступов у элементов */
 h1,
 h2,
@@ -31,33 +34,75 @@ h6,
 p {
   margin-top: 0;
 }
+
 /* Класс для обнуления базовых свойств у списков (ul) */
 .list {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
+
 /* Класс для обнуления базовых свойств у ссылок */
 .link {
   text-decoration: none;
   color: inherit;
 }
+
 /* Свойства для корректного отображения картинок */
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-/* Свойства для обнуления курсива у address */
 
+/* Свойства для обнуления курсива у address */
 address {
   font-style: normal;
 }
 
+/* Класс для сокрытия */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Base */
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .container {
-  padding: 0 28px;
-  margin: 0 auto;
+  padding-left: 28px;
+  padding-right: 28px;
+  margin-left: auto;
+  margin-right: auto;
   width: 1360px;
+}
+
+.title {
+  margin-bottom: 34px;
+
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+}
+
+.subtitle {
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.65;
 }
 
 /* Header */
@@ -107,10 +152,10 @@ address {
 /* hero */
 .hero {
   background-position: center;
-  
+
   text-align: center;
   background-color: var(--primary-text-color);
-  
+
   padding-top: 285px;
   padding-bottom: 285px;
 }
@@ -155,4 +200,75 @@ address {
 
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
+}
+
+/* Section About */
+.section-about {
+  padding: 40px 0 19px;
+}
+
+.list-about {
+  display: flex;
+}
+
+.list-about-item:not(:last-child) {
+  margin-right: 71px;
+}
+
+.list-about-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.list-about-icon-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+
+  background-color: var(--accent-color);
+}
+
+.list-about-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.section-about-text {
+  margin-bottom: 0;
+}
+
+/* Section Solution */
+.section-solution {
+  padding: 0;
+}
+
+.container-solution {
+  display: flex;
+}
+
+.solution-content {
+  padding: 84px 44px 84px 30px;
+
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+
+.section-solution-text {
+  margin-bottom: 17px;
+}
+
+.section-solution-link {
+  display: inline-block;
+  padding: 11px 27px 12px 42px;
+
+  border: 1px solid #ffffff;
+  border-radius: 5px;
 }
