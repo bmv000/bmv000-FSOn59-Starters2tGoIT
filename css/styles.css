@@ -272,3 +272,34 @@ address {
   border: 1px solid #ffffff;
   border-radius: 5px;
 }
+
+
+/* Section case */
+
+.case-text {
+  font-size: 20px;
+  line-height: 1.65;
+  text-align: center;
+
+  margin-bottom: 15px;
+}
+
+.title {
+  text-align: center;
+}
+
+.case-lorem {
+  text-align: center;
+
+  margin-bottom: 38px;
+}
+
+.case-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.case-item {
+  flex-basis: calc((100% - 24px) / 4);
+}
